@@ -63,7 +63,7 @@ webhooks:                                       # Can be individually specified 
   run_end:
   changes:
 plex:                                           # Can be individually specified per library as well
-  url: https://YOURSERVER@TAKEONE.take-one.world
+  url: https://YOURSERVER@TAKEONE.t***-o**.w****
   token: **TOKEN HERE**
   timeout: 60
   clean_bundles: true
