@@ -7,7 +7,7 @@ libraries:                                      # This is called out once within
         #schedule: weekly(tuesday)
       #- file: config/metadata/movies/charts.yml
         #schedule: weekly(friday)
-Movies - 4K Remux:
+  Movies - 4K Remux:
     #overlay_path:
       #- remove_overlays: true      # Set this to true to remove all overlays
       #- file: config/metadata/series4k/audio_codec.yml
