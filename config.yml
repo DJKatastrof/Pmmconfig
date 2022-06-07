@@ -1,26 +1,40 @@
 ## This file is a template remove the .template to use the file
 
-libraries:                                      # This is called out once within the config.yml file                                       
-  #Movies:
+libraries:                                      # This is called out once within the config.yml file
+  Movies:
     #metadata_path:
-      #- file: config/metadata/movies/charts.yml
-        #schedule: weekly(tuesday)
       #- file: config/metadata/movies/streaming.yml
         #schedule: weekly(tuesday)
+      #- file: config/metadata/movies/charts.yml
+        #schedule: weekly(friday)
   #TV:
     #metadata_path:
       #- file: config/metadata/series/streaming.yml
         #schedule: weekly(tuesday)
       #- file: config/metadata/series/charts.yml
-        #schedule: weekly(tuesday)
-  #TV (4K):
+        #schedule: weekly(friday)
+  TV (4K):
     #overlay_path:
       #- remove_overlays: true      # Set this to true to remove all overlays
       #- file: config/metadata/series4k/audio_codec.yml
-        #schedule: daily
+        #  schedule: hourly(10)
       #- git: PMM/overlays/resolution
-        #schedule: daily                          # This is a file within the https://github.com/meisnate12/Plex-Meta-Manager-Configs Repository
-settings:                                      
+        #  schedule: hourly(10)
+  TV (4K-DV):
+    #overlay_path:
+      #- remove_overlays: true      # Set this to true to remove all overlays
+      #- file: config/metadata/series4k/audio_codec.yml
+        #schedule: hourly(10)
+      #- git: PMM/overlays/resolution
+        #schedule: hourly(10)
+  Movies (4K-Remux):
+    #overlay_path:
+      #- remove_overlays: true      # Set this to true to remove all overlays
+      #- file: config/metadata/series4k/audio_codec.yml
+        #schedule: hourly(10)
+      #- git: PMM/overlays/resolution
+        #schedule: hourly(10)
+settings:
   cache: true
   cache_expiration: 60
   asset_directory: config/assets
@@ -63,14 +77,14 @@ webhooks:                                       # Can be individually specified 
   run_end:
   changes:
 plex:                                           # Can be individually specified per library as well
-  url: https://YOURSERVER@TAKEONE.t***-o**.w****
-  token: **TOKEN HERE**
+  url: https://YOURNAME-IN-THE-URL.take-one.world
+  token: 
   timeout: 60
   clean_bundles: true
   empty_trash: false
   optimize: false
 tmdb:
-  apikey: TMDB KEY HERE
+  apikey: 
   language: en
   cache_expiration: 60
   region:
@@ -79,7 +93,9 @@ trakt:
   client_secret: 
   authorization:
     access_token: 
-    token_type: 
+    token_type: Bearer
     expires_in: 
     refresh_token: 
+    scope: public
+    created_at: 
   pin:
