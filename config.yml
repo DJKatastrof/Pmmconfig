@@ -7,7 +7,7 @@ libraries:                                      # This is called out once within
         #schedule: weekly(tuesday)
       #- file: config/metadata/movies/charts.yml
         #schedule: weekly(friday)
-  #TV:
+  TV:
     #metadata_path:
       #- file: config/metadata/series/streaming.yml
         #schedule: weekly(tuesday)
