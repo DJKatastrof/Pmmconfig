@@ -18,7 +18,7 @@ libraries:                                      # This is called out once within
     #metadata_path:
       #- git: PMM/streaming
         #schedule: weekly(tuesday)
-      #- file: config/metadata/series/charts.yml
+      #- file: /config/plexmetamanager/metadata/series/charts.yml
         #schedule: weekly(friday)
   Series - 4K:
     #overlay_path:
