@@ -3,34 +3,34 @@
 libraries:                                      # This is called out once within the config.yml file
   Movies:
     #metadata_path:
-      #- file: config/metadata/movies/streaming.yml
+      #- git: PMM/streaming
         #schedule: weekly(tuesday)
-      #- file: config/metadata/movies/charts.yml
+      #- file: /config/plexmetamanager/metadata/movies/charts.yml
         #schedule: weekly(friday)
   Movies - 4K Remux:
     #overlay_path:
       #- remove_overlays: true      # Set this to true to remove all overlays
-      #- file: config/metadata/series4k/audio_codec.yml
+      #- git: PMM/overlays/audio_codec
         #schedule: hourly(10)
       #- git: PMM/overlays/resolution
         #schedule: hourly(10)
   Series:
     #metadata_path:
-      #- file: config/metadata/series/streaming.yml
+      #- git: PMM/streaming
         #schedule: weekly(tuesday)
       #- file: config/metadata/series/charts.yml
         #schedule: weekly(friday)
   Series - 4K:
     #overlay_path:
       #- remove_overlays: true      # Set this to true to remove all overlays
-      #- file: config/metadata/series4k/audio_codec.yml
-        #  schedule: hourly(10)
+      #- git: PMM/overlays/audio_codec
+        #schedule: hourly(10)
       #- git: PMM/overlays/resolution
-        #  schedule: hourly(10)
+        #schedule: hourly(10)
   Series - 4K DolbyVision:
     #overlay_path:
       #- remove_overlays: true      # Set this to true to remove all overlays
-      #- file: config/metadata/series4k/audio_codec.yml
+      #- git: PMM/overlays/audio_codec
         #schedule: hourly(10)
       #- git: PMM/overlays/resolution
         #schedule: hourly(10)
