@@ -7,27 +7,27 @@ libraries:                                      # This is called out once within
         #schedule: weekly(tuesday)
       #- file: config/metadata/movies/charts.yml
         #schedule: weekly(friday)
-  TV:
+Movies - 4K Remux:
+    #overlay_path:
+      #- remove_overlays: true      # Set this to true to remove all overlays
+      #- file: config/metadata/series4k/audio_codec.yml
+        #schedule: hourly(10)
+      #- git: PMM/overlays/resolution
+        #schedule: hourly(10)
+  Series:
     #metadata_path:
       #- file: config/metadata/series/streaming.yml
         #schedule: weekly(tuesday)
       #- file: config/metadata/series/charts.yml
         #schedule: weekly(friday)
-  TV (4K):
+  Series - 4K:
     #overlay_path:
       #- remove_overlays: true      # Set this to true to remove all overlays
       #- file: config/metadata/series4k/audio_codec.yml
         #  schedule: hourly(10)
       #- git: PMM/overlays/resolution
         #  schedule: hourly(10)
-  TV (4K-DV):
-    #overlay_path:
-      #- remove_overlays: true      # Set this to true to remove all overlays
-      #- file: config/metadata/series4k/audio_codec.yml
-        #schedule: hourly(10)
-      #- git: PMM/overlays/resolution
-        #schedule: hourly(10)
-  Movies (4K-Remux):
+  Series - 4K DolbyVision:
     #overlay_path:
       #- remove_overlays: true      # Set this to true to remove all overlays
       #- file: config/metadata/series4k/audio_codec.yml
