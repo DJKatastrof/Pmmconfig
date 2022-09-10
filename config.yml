@@ -58,10 +58,6 @@
 #    - git: PMM/overlays/audio_codec
 #      schedule: weekly(wednesday)
 #      template_variables:
-#          #horizontal_offset: 15
-#          #horizontal_align: left
-#          #vertical_offset: 135
-#          #ertical_align: top
 #        use_opus: false
 #        use_mp3: false
 #        use_aac: false
