@@ -1,0 +1,172 @@
+# This file is a template remove the .template to use the file
+
+#libraries:                                      # This is called out once within the config.yml file
+  Movies:
+#    metadata_path:
+#    - git: PMM/chart/basic
+#      schedule: weekly(monday)
+#      template_variables:
+#        use_separator: false
+#        use_episodes: false
+#    - git: PMM/chart/imdb
+#      schedule: weekly(monday)
+#      template_variables:
+#        use_lowest: false
+#        collection_section: '02'
+#    - git: PMM/chart/trakt
+#      schedule: weekly(tuesday)
+#      template_variables:
+#        collection_section: '03'
+#        use_separator: false
+#        use_collected: false
+#        use_watched: false
+#    - git: PMM/streaming
+#      schedule: weekly(tuesday)
+#      template_variables:
+#        collection_section: '04'
+#        use_separator: false
+
+  Series:
+#    metadata_path:
+#    - git: PMM/chart/basic
+#      schedule: weekly(monday)
+#      template_variables:
+#        use_separator: false
+#        use_episodes: false
+#    - git: PMM/chart/imdb
+#      schedule: weekly(monday)
+#      template_variables:
+#        use_lowest: false
+#        collection_section: '02'
+#    - git: PMM/chart/trakt
+#      schedule: weekly(tuesday)
+#      template_variables:
+#        collection_section: '03'
+#        use_separator: false
+#        use_collected: false
+#        use_watched: false
+#    - git: PMM/streaming
+#      schedule: weekly(tuesday)
+#      template_variables:
+#        collection_section: '04'
+#        use_separator: false
+
+
+  Movies - 4K Remux:
+#    overlay_path:
+#    - remove_overlays: false        # Set this to true to remove all overlays
+#    - git: PMM/overlays/audio_codec
+#      schedule: weekly(wednesday)
+#      template_variables:
+#          #horizontal_offset: 15
+#          #horizontal_align: left
+#          #vertical_offset: 135
+#          #ertical_align: top
+#        use_opus: false
+#        use_mp3: false
+#        use_aac: false
+#    - git: PMM/overlays/resolution
+#      schedule: weekly(wednesday)
+#      template_variables:
+#        use_1080p: false
+#        use_720p: false
+#        use_576p: false
+#        use_480p: false
+
+  Series - 4K:
+#    overlay_path:
+#    - remove_overlays: false        # Set this to true to remove all overlays
+#    - git: PMM/overlays/audio_codec
+#      schedule: weekly(thursday)
+#      template_variables:
+#        use_opus: false
+#        use_mp3: false
+#    - git: PMM/overlays/resolution
+#      schedule: weekly(thursday)
+#      template_variables:
+#        use_1080p: false
+#        use_720p: false
+#        use_576p: false
+#        use_480p: false
+
+  Series - 4K DolbyVision:
+#    overlay_path:
+#    - remove_overlays: false        # Set this to true to remove all overlays
+#    - git: PMM/overlays/audio_codec
+#      schedule: weekly(saturday)
+#      template_variables:
+#        use_opus: false
+#        use_mp3: false
+#    - git: PMM/overlays/resolution
+#      #schedule: weekly(saturday)
+#      template_variables:
+#        use_1080p: false
+#        use_720p: false
+#        use_576p: false
+#        use_480p: false
+
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_options: false
+  show_missing: false
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+webhooks:                                       # Can be individually specified per library as well
+  error:
+  version:
+  run_start:
+  run_end:
+  changes:
+plex:                                           # Can be individually specified per library as well
+  url: https://YOURNAME-IN-THE-URL.take-one.world
+  token: 
+  timeout: 60
+  clean_bundles: true
+  empty_trash: false
+  optimize: false
+tmdb:
+  apikey: 
+  language: en
+  cache_expiration: 60
+  region:
+trakt:
+  client_id: 
+  client_secret: 
+  authorization:
+    access_token: 
+    token_type: Bearer
+    expires_in: 
+    refresh_token: 
+    scope: public
+    created_at: 
+  pin:
